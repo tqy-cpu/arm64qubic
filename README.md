@@ -23,3 +23,6 @@ https://wallet.qubic.li/自行注册获取
 
 如何查询当前挖矿状态
 https://pooltemp.qubic.solutions/info?miner=这里填钱包地址&list=true
+
+### 打赏
+![image](5091710529311_.pic.jpg)
