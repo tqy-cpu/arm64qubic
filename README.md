@@ -1,6 +1,8 @@
 # easyqubic
-
+一键安装rqiner锄头,启动后自动拉取最新锄头自动挖矿
+适用于安卓手机
 ### 使用
+安装termux,建议zerotermux
 
 ```
 curl -O https://raw.githubusercontent.com/chashaochang/easyqubic/main/install.sh && chmod +x install.sh && ./install.sh
