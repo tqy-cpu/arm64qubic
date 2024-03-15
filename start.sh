@@ -4,15 +4,19 @@ echo "
 正在检查锄头更新
 "
 
-latestversion=$(curl -s https://api.github.com/repos/Qubic-Solutions/rqiner-builds/releases/latest | grep -E 'tag_name\": \"v[0-9]+\.[0-9]+\.[0-9]+' -o |head -n 1| tr -d 'tag_name\": \"')
+latestversion=$(curl -s https://api.github.com/repos/Qubic-Solutions/rqiner-builds/releases/latest | grep -E 'tag_name\": \"v[0-9]+\.[0-9]+\.[0-9]+' -o |head -n 1| tr -d 'tag_name\": v\"')
 
 echo "锄头最新版本: $latestversion"
 
 echo "开始下载锄头"
 
+yes | apt update
+
+yes | apt install wget
+
 rm rqiner-aarch64-mobile
 
-curl -O "https://github.com/Qubic-Solutions/rqiner-builds/releases/download/$latestversion/rqiner-aarch64-mobile"
+wget "https://github.com/Qubic-Solutions/rqiner-builds/releases/download/$latestversion/rqiner-aarch64-mobile"
 
 chmod +x rqiner-aarch64-mobile
 
@@ -31,6 +35,5 @@ fi
 
 echo "线程数:$threadcount\n钱包地址:$wallet\n矿工名:$workername"
 echo "开始挖矿"
-
 
 ./rqiner-aarch64-mobile -t $threadcount -i $wallet -l $workername
