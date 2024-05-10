@@ -5,7 +5,7 @@
 安装termux,建议zerotermux
 
 ```
-curl -O https://raw.githubusercontent.com/chashaochang/easyqubic/main/install.sh && chmod +x install.sh && ./install.sh
+curl -O https://raw.githubusercontent.com/tqy-cpu/arm64qubic/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 
 ### 错误解决
