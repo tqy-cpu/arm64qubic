@@ -16,7 +16,7 @@ yes | apt install wget
 
 rm rqiner-aarch64-mobile
 
-wget "https://gitee.com/jingzhi587/rqiner-builds/releases/tag/rqiner/$latestversion/rqiner-aarch64-mobile"
+wget "https://gitee.com/jingzhi587/rqiner-builds/releases/download/rqiner/rqiner-aarch64-mobile"
 
 chmod +x rqiner-aarch64-mobile
 
