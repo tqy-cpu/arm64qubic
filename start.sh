@@ -4,7 +4,7 @@ echo "
 正在检查锄头更新
 "
 
-latestversion=$(curl -s https://api.github.com/repos/Qubic-Solutions/rqiner-builds/releases/latest | grep -E 'tag_name\": \"v[0-9]+\.[0-9]+\.[0-9]+' -o |head -n 1| tr -d 'tag_name\": \"')
+latestversion=$(curl -s https://api.gitee.com/jingzhi587/rqiner-builds/releases/tag/rqiner/latest | grep -E 'tag_name\": \"v[0-9]+\.[0-9]+\.[0-9]+' -o |head -n 1| tr -d 'tag_name\": \"')
 
 echo "锄头最新版本: $latestversion"
 
