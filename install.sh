@@ -32,7 +32,7 @@ echo "正在下载启动文件~"
 
 cd $current/root
 
-curl -O https://raw.githubusercontent.com/chashaochang/easyqubic/main/start.sh
+curl -O https://raw.githubusercontent.com/tqy-cpu/arm64qubic/main/start.sh
 
 if [ ! -f "$current/root/start.sh" ]; then
    echo "启动文件下载失败了"
